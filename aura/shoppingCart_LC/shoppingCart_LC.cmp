@@ -1,0 +1,29 @@
+<aura:component >
+    <aura:attribute type="string" name="recordId" /> 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    
+    <div class="slds-card">
+        <div class="slds-card__body slds-card__body_inner slds-p-top_medium">
+            Hello VF Page,
+            This record id <b>({!v.recordId}) </b> comes from the lighting component 
+        </div>
+    </div>
+    <aura:html tag="style">
+        .slds-backdrop {
+        background: rgba(43, 40, 38, 0) !important;
+        }
+        .backgroundSpinner{
+        background: rgba(0, 0, 0, 0) !important;
+        }
+        .modal-body {
+        background: rgba(0, 0, 0, 0) !important;
+        box-shadow: none !important;
+        }
+        .closeIcon {
+        display:none !important;
+        }
+        .desktop {
+        overflow: visible !important;
+        }
+    </aura:html>  
+</aura:component>
